@@ -1,7 +1,6 @@
 name: MobStacker
 main: MobStacker/main
-version: 1.0.0
-api: [3.0.0-ALPHA11]
+version: 1.0.0-ALPHA
+api: [1.0.0-ALPHA11]
 author: SwiftTheDev
 load: SwiftTheDev
-
