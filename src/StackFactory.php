@@ -1,6 +1,6 @@
 <?php
 
-namespace BeatsCore\stacker;
+namespace mobstacker\stacker;
 
 use pocketmine\entity\Entity;
 use pocketmine\entity\Item;
