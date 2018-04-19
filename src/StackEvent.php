@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace BeatsCore\stacker;
+namespace mobstacker\stacker;
 
 use pocketmine\Player;
 use pocketmine\entity\Living;
 use pocketmine\event\Listener;
 use pocketmine\event\entity\{EntityDamageEvent, EntitySpawnEvent, EntityMotionEvent};
 
-use BeatsCore\Core;
+use mobstacker\mobstacker;
 
 class StackEvent implements Listener{
 
