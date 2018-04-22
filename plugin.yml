@@ -1,6 +1,6 @@
 name: MobStacker
 author: SwiftTheDev
-version: 1.0.0
-api: [3.0.0-ALPHA11, 3.0.0-ALPHA12]
+version: 1.0.1
+api: [3.0.0-ALPHA11, 3.0.0-ALPHA12, 3.0.0-ALPHA13, 3.0.0-ALPHA14]
 main: MobStacker\Loader
 description: A public working Mob Stacker plugin for faction servers.
