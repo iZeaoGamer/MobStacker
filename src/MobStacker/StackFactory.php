@@ -1,6 +1,6 @@
 <?php
 
-namespace mobstacker\stacker;
+namespace MobStacker;
 
 use pocketmine\entity\Entity;
 use pocketmine\entity\Item;
