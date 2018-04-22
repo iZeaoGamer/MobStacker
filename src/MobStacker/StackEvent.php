@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace mobstacker\stacker;
+namespace MobStacker;
 
 use pocketmine\Player;
 use pocketmine\entity\Living;
@@ -16,7 +16,7 @@ class StackEvent implements Listener{
     /** @var Core  */
     private $plugin;
 
-    public function __construct(Core $plugin){
+    public function __construct(Loader $plugin){
         $this->plugin = $plugin;
         $plugin->getServer()->getPluginManager()->registerEvents($this, $plugin);
     }
