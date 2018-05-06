@@ -50,3 +50,4 @@ class StackEvent implements Listener{
         if(!$entity instanceof Living && !$entity instanceof Player) return;
         StackFactory::addToClosestStack($entity, 16);
     }
+    }
