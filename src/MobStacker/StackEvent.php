@@ -9,8 +9,6 @@ use pocketmine\entity\Living;
 use pocketmine\entity\Item;
 use pocketmine\entity\Entity;
 use pocketmine\math\Vector3;
-use pocketmine\nbt\tag\CompoundTag;
-use pocketmine\nbt\tag\IntTag;
 use pocketmine\utils\Config;
 use pocketmine\event\Listener;
 use pocketmine\event\entity\{EntityDamageEvent, EntitySpawnEvent, EntityDeathEvent, EntityMotionEvent};
