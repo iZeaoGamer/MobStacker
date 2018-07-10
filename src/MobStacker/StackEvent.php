@@ -6,8 +6,12 @@ namespace MobStacker;
 
 use pocketmine\Player;
 use pocketmine\entity\Living;
+use pocketmine\entity\Item;
+use pocketmine\entity\Entity;
+use pocketmine\math\Vector3;
+use pocketmine\utils\Config;
 use pocketmine\event\Listener;
-use pocketmine\event\entity\{EntityDamageEvent, EntitySpawnEvent, EntityMotionEvent};
+use pocketmine\event\entity\{EntityDamageEvent, EntitySpawnEvent, EntityDeathEvent, EntityMotionEvent};
 
 use mobstacker\mobstacker;
 
@@ -18,7 +22,6 @@ class StackEvent implements Listener{
 
     public function __construct(Loader $plugin){
         $this->plugin = $plugin;
-        $plugin->getServer()->getPluginManager()->registerEvents($this, $plugin);
     }
 
     public function onDamage(EntityDamageEvent $e): void{
@@ -45,4 +48,4 @@ class StackEvent implements Listener{
         if(!$entity instanceof Living && !$entity instanceof Player) return;
         StackFactory::addToClosestStack($entity, 16);
     }
-}
+    }
