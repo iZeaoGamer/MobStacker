@@ -23,7 +23,7 @@ class StackEvent implements Listener{
 
     public function onDamage(EntityDamageEvent $e): void{
         $entity = $e->getEntity();
-        if($e->getDamage() >= $entity->getHealth()){
+        if($e->getModifier() >= $entity->getHealth()){
             if($entity instanceof Living and StackFactory::isStack($entity)){
                 $entity->setLastDamageCause($e);
                 if(StackFactory::removeFromStack($entity)){
