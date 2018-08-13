@@ -112,7 +112,7 @@ class StackFactory{
             $stack = null;
             $closest = $range;
             $bb = $entity->getBoundingBox();
-            $bb = $bb->grow($range, $range, $range);
+            $bb = $bb->expandedCopy($range, $range, $range);
             foreach($entity->getLevel()->getCollidingEntities($bb) as $e){
                 if(is_a($e, get_class($entity)) and $stack !== $entity){
                     $distance = $e->distance($entity);
