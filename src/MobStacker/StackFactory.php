@@ -1,6 +1,6 @@
 <?php
 
-namespace MobStackerstacker;
+namespace MobStacker;
 
 use pocketmine\entity\Living;
 use pocketmine\entity\object\ItemEntity;

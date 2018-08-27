@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mobstacker;
+namespace MobStacker;
 
 use pocketmine\Player;
 use pocketmine\entity\Living;
@@ -21,7 +21,7 @@ class StackEvent implements Listener{
 
     public function onDamage(EntityDamageEvent $e): void{
         $entity = $e->getEntity();
-        if($e->getDamage() >= $entity->getHealth()){
+        if($e->getModifier(EntityDamageEvent::MODIFIER_CRITICAL >= $entity->getHealth()){
             if($entity instanceof Living and StackFactory::isStack($entity)){
                 $entity->setLastDamageCause($e);
                 if(StackFactory::removeFromStack($entity)){
